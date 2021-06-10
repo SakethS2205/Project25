@@ -26,7 +26,7 @@ function setup() {
 }
 
 
-function draw() {
+function draw() {	
   rectMode(CENTER);
   background(230);
   
@@ -34,12 +34,12 @@ function draw() {
   groundObject.display();
   dustbinObj.display();
   paper.display();
-  keyPressed();
+  keyPressed(); 	
 
 }
 function keyPressed() {
 	if (keyCode === UP_ARROW) {
-	Matter.body.applyForce(paper.body,paper.body.position,{x:130,y:145});
+	Matter.Body.applyForce(paper.body,paper.body.position,{x:100,y:-69});
 	}
 }
 
